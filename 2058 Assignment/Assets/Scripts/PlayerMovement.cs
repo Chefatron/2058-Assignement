@@ -33,8 +33,8 @@ public class PlayerMovement : MonoBehaviour
     // Used to check if the player is airborne 
     bool playerAirborne;
 
-    // Used to get the players height for accurate raycasting
-    float height;
+    // Used to calculate how long the position adjusting raycast should be
+    float rayLength;
 
     // Used to create my own gravity
     [SerializeField] float gravity;
@@ -45,7 +45,20 @@ public class PlayerMovement : MonoBehaviour
     // A mask for the layer that is ground
     [SerializeField] LayerMask ground;
 
+    // Used to get the position of where the raycast hits the ground
     RaycastHit groundHit;
+
+    // Used to tell if the player is holding the jump button
+    bool isJumping;
+
+    // Used time how long the player has held the jump button for
+    float jumpHoldTimer;
+
+    // Used to tell if the player is currently crouched
+    bool isCrouched;
+
+    // The players collider, needed for adjusting its size when crouching
+    CapsuleCollider playerCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -59,24 +72,32 @@ public class PlayerMovement : MonoBehaviour
         // Sets the player to the defualt state of airborne
         playerAirborne = true;
 
-        // Gets the height of the player
-        height = GetComponent<CapsuleCollider>().height;
+        // Defaults is jumping to false
+        isJumping = false;
+
+        // Calculates the ray length based on the players height and the offset
+        rayLength = GetComponent<CapsuleCollider>().height / 2 + 0.1f;
+
+        playerCollider = GetComponent<CapsuleCollider>();
     }
 
     // FixedUpdate is called dynamically for physics based operations
     void FixedUpdate()
     {
-        // Applies force to players rigidbody based on the input
-        playerRB.AddRelativeForce(movementData * speed);
+        if (!isCrouched)
+        {
+            // Applies force to players rigidbody based on the input
+            playerRB.AddForce(movementData * speed);
+        }
 
         // Shoots a raycasted line down from the player that detects ground
-        playerGrounded = Physics.Raycast(playerRB.position, Vector3.down, out groundHit, height / 2 + 0.5f, ground);
+        playerGrounded = Physics.Raycast(playerRB.position, Vector3.down, out groundHit, rayLength, ground);
 
         // This checks if the players position is too high or too low based on the raycast and adjusts correctly but only plays when grounded as to not mess with jumping
         // This exists to allow the player to walk up slopes
-        if (playerGrounded == true && (Vector3.Distance(playerRB.position, groundHit.point) < height / 2 + 0.1f || Vector3.Distance(playerRB.position, groundHit.point) > height / 2 + 0.1f))
+        if (playerGrounded == true && (Vector3.Distance(playerRB.position, groundHit.point) < rayLength || Vector3.Distance(playerRB.position, groundHit.point) > rayLength))
         {
-            playerRB.transform.SetPositionAndRotation(new Vector3(playerRB.position.x, groundHit.point.y + height / 2 + 0.1f, playerRB.position.z), playerRB.transform.rotation);
+            playerRB.transform.SetPositionAndRotation(new Vector3(playerRB.position.x, groundHit.point.y + rayLength, playerRB.position.z), playerRB.transform.rotation);
         }
 
         // My own gravity system which I am only using because gravity is turned off for the player so that I don't have to stop their fall all the time in fixed update
@@ -91,6 +112,16 @@ public class PlayerMovement : MonoBehaviour
 
             // Tells the code the player is no longer airborne
             playerAirborne = false;
+        }
+        
+        // This basically checks if the player is still holding the jump button during a short time after pressing it to give them a larger jump than just tapping it
+        if (isJumping && jumpHoldTimer > 0)
+        {
+            // Applies upward force
+            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Force);
+
+            // Reduces timer
+            jumpHoldTimer = jumpHoldTimer - Time.deltaTime;
         }
     }
 
@@ -118,18 +149,44 @@ public class PlayerMovement : MonoBehaviour
         keyData = keyInput.Get<float>();
 
         // Puts the vector 2 into a vector 3 for applying force
-        movementData = new Vector3(keyData, 0.0f, 0.0f);
+        movementData = new Vector3(keyData, 0f, 0f);
     }
 
+    // Is called on both press and release
     void OnJump()
     {
-        if (playerGrounded == true)
+        // Reverses the state of jumping
+        isJumping = !isJumping;
+
+        // Checks if this call of the function set jumping to true and if the player is currently grounded
+        if (isJumping && playerGrounded)
         {
             // Zeros out the players up and down movement for a smooth jump
             playerRB.velocity = new Vector3(playerRB.velocity.x, 0f, playerRB.velocity.z);
 
             // Adds upward force to the player with impulse, so only once application
             playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+            // Sets the hold timer which is used in fixed update above
+            jumpHoldTimer = 0.5f;
+        }
+    }
+
+    void OnCrouch()
+    {
+        // Reverses the crouched state
+        isCrouched = !isCrouched;
+
+        // Adjusts the size of the players collider based on the state
+        if (isCrouched)
+        {
+            playerCollider.height = 1;
+            playerCollider.center = new Vector3(0, -0.5f, 0);
+        }
+        else if (!isCrouched)
+        {
+            playerCollider.height = 2;
+            playerCollider.center = Vector3.zero;
         }
     }
 }
