@@ -27,7 +27,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
+    importAnimatedCustomProperties: 1
     importConstraints: 1
     animationCompression: 0
     animationRotationError: 0.5
@@ -36,7 +36,2921 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rig|0APose
+      takeName: Rig|0APose
+      internalID: 6696740940770198071
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {fileID: 31900000, guid: 41fb312f5864a924199bcbf0d6512492, type: 2}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|Aim
+      takeName: Rig|Aim
+      internalID: 5594878654339167075
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|CrouchPaladinLeft
+      takeName: Rig|CrouchPaladinLeft
+      internalID: 3403335357825480245
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|CrouchPaladinRight
+      takeName: Rig|CrouchPaladinRight
+      internalID: 5787656439679811030
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|CrouchPirateLeft
+      takeName: Rig|CrouchPirateLeft
+      internalID: -8861211988345759124
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|CrouchPirateRight
+      takeName: Rig|CrouchPirateRight
+      internalID: 1229850424048791139
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|FallPaladin
+      takeName: Rig|FallPaladin
+      internalID: 2345118295308232393
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|FallPirate
+      takeName: Rig|FallPirate
+      internalID: 3442182884244276252
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|GrabPirate
+      takeName: Rig|GrabPirate
+      internalID: 343042375199686023
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|IdlePaladinLeft
+      takeName: Rig|IdlePaladinLeft
+      internalID: 9014859265704528708
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|IdlePaladinRight
+      takeName: Rig|IdlePaladinRight
+      internalID: -8165447226827912673
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|IdlePirateLeft
+      takeName: Rig|IdlePirateLeft
+      internalID: -6550439062034437259
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|IdlePirateRight
+      takeName: Rig|IdlePirateRight
+      internalID: 7776097090772414442
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|JabPaladin
+      takeName: Rig|JabPaladin
+      internalID: 6988701045238670249
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|JabPirate1
+      takeName: Rig|JabPirate1
+      internalID: 6975823966735280706
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|JabPirate2
+      takeName: Rig|JabPirate2
+      internalID: 8068831765356454877
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|JumpPaladin
+      takeName: Rig|JumpPaladin
+      internalID: -338158222676851795
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|JumpPirate
+      takeName: Rig|JumpPirate
+      internalID: 517929185456817054
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|Prayer
+      takeName: Rig|Prayer
+      internalID: -3093873346220510097
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|PrayerPose
+      takeName: Rig|PrayerPose
+      internalID: 1355799842656300648
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|RunPaladin
+      takeName: Rig|RunPaladin
+      internalID: 6487045184697586824
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|RunPirate
+      takeName: Rig|RunPirate
+      internalID: -2481626480361460553
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|SpinPaladin
+      takeName: Rig|SpinPaladin
+      internalID: -268469948968266997
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig|SwingPaladin
+      takeName: Rig|SwingPaladin
+      internalID: -2926722690646470989
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Paladin
+        weight: 1
+      - path: Pirate
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Left Foot Target
+        weight: 1
+      - path: Rig/Left Foot Target/Left Foot Target_end
+        weight: 1
+      - path: Rig/Left Hand Target
+        weight: 1
+      - path: Rig/Left Hand Target/Left Hand Target_end
+        weight: 1
+      - path: Rig/Left IK Arm
+        weight: 1
+      - path: Rig/Left IK Arm/Left IK Arm_end
+        weight: 1
+      - path: Rig/Left IK Leg
+        weight: 1
+      - path: Rig/Left IK Leg/Left IK Leg_end
+        weight: 1
+      - path: Rig/Pelvis
+        weight: 1
+      - path: Rig/Pelvis/Chest
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head
+        weight: 1
+      - path: Rig/Pelvis/Chest/Head/Head_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Left Shoulder/Left Arm/Left Forearm/Left Hand/Left
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop
+        weight: 1
+      - path: Rig/Pelvis/Chest/Prop/Prop_end
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Rig/Pelvis/Chest/Right Shoulder/Right Arm/Right Forearm/Right Hand/Right
+          Hand_end
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Rig/Pelvis/Left Thigh/Left Calf/Left Foot/Left Foot_end
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Rig/Pelvis/Right Thigh/Right Calf/Right Foot/Right Foot_end
+        weight: 1
+      - path: Rig/Right Foot Target
+        weight: 1
+      - path: Rig/Right Foot Target/Right Foot Target_end
+        weight: 1
+      - path: Rig/Right Hand Target
+        weight: 1
+      - path: Rig/Right Hand Target/Right Hand Target_end
+        weight: 1
+      - path: Rig/Right IK Arm
+        weight: 1
+      - path: Rig/Right IK Arm/Right IK Arm_end
+        weight: 1
+      - path: Rig/Right IK Leg
+        weight: 1
+      - path: Rig/Right IK Leg/Right IK Leg_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Pirate|0APose
+      takeName: Pirate|0APose
+      internalID: -3921675842056958144
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Paladin|0APose
+      takeName: Paladin|0APose
+      internalID: 104963296799578186
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -62,7 +2976,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
-    optimizeBones: 1
+    optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8

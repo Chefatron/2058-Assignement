@@ -60,6 +60,9 @@ public class PlayerMovement : MonoBehaviour
     // The players collider, needed for adjusting its size when crouching
     CapsuleCollider playerCollider;
 
+    // The animator that manages the players animations
+    Animator playerAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,10 +78,14 @@ public class PlayerMovement : MonoBehaviour
         // Defaults is jumping to false
         isJumping = false;
 
-        // Calculates the ray length based on the players height and the offset
-        rayLength = GetComponent<CapsuleCollider>().height / 2 + 0.1f;
-
+        // Gets the capsule collider
         playerCollider = GetComponent<CapsuleCollider>();
+
+        // Calculates the ray length based on the players height and the offset
+        rayLength = playerCollider.height / 2 + 0.1f;
+
+        // Gets the animator
+        playerAnimator = GetComponentInChildren<Animator>();
     }
 
     // FixedUpdate is called dynamically for physics based operations
@@ -88,10 +95,21 @@ public class PlayerMovement : MonoBehaviour
         {
             // Applies force to players rigidbody based on the input
             playerRB.AddForce(movementData * speed);
+
+            if (movementData.x != 0)
+            {
+                playerAnimator.SetBool("Running", true);
+            }
+            else
+            {
+                playerAnimator.SetBool("Running", false);
+            }
         }
 
         // Shoots a raycasted line down from the player that detects ground
         playerGrounded = Physics.Raycast(playerRB.position, Vector3.down, out groundHit, rayLength, ground);
+
+        //Debug.DrawRay(playerRB.position, new Vector3(0, -rayLength, 0), Color.red, 0.1f);
 
         // This checks if the players position is too high or too low based on the raycast and adjusts correctly but only plays when grounded as to not mess with jumping
         // This exists to allow the player to walk up slopes
@@ -180,12 +198,12 @@ public class PlayerMovement : MonoBehaviour
         // Adjusts the size of the players collider based on the state
         if (isCrouched)
         {
-            playerCollider.height = 1;
+            playerCollider.height = 1.5f;
             playerCollider.center = new Vector3(0, -0.5f, 0);
         }
         else if (!isCrouched)
         {
-            playerCollider.height = 2;
+            playerCollider.height = 3;
             playerCollider.center = Vector3.zero;
         }
     }
