@@ -65,8 +65,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -183,8 +181,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -303,8 +299,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -421,8 +415,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -541,8 +533,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -659,8 +649,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -779,8 +767,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -897,8 +883,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -1017,8 +1001,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -1135,8 +1117,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -1255,8 +1235,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -1373,8 +1351,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -1493,8 +1469,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -1611,8 +1585,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -1731,8 +1703,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -1849,8 +1819,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -1969,8 +1937,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -2087,8 +2053,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -2207,8 +2171,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -2325,8 +2287,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -2445,8 +2405,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -2563,8 +2521,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1
@@ -2683,8 +2639,6 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Paladin
-        weight: 1
       - path: Pirate
         weight: 1
       - path: Rig
@@ -2801,8 +2755,6 @@ ModelImporter:
       events: []
       transformMask:
       - path: 
-        weight: 1
-      - path: Paladin
         weight: 1
       - path: Pirate
         weight: 1

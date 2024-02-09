@@ -20,10 +20,17 @@ public class PlayerAim : MonoBehaviour
     // The players rigidbody
     Rigidbody playerRB;
 
+    // The script that controls animations
+    PlayerAnimations animations;
+
     // Start is called before the first frame update
     void Start()
     {
-        playerRB = GetComponent<Rigidbody>();   
+        // Gets the rigidbody
+        playerRB = GetComponent<Rigidbody>(); 
+        
+        // Gets the animation script
+        animations = GetComponent<PlayerAnimations>();
     }
 
     // Update is called once per frame
@@ -39,6 +46,16 @@ public class PlayerAim : MonoBehaviour
     private void FixedUpdate()
     {
         playerRB.MoveRotation(Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(aimObject.transform.position.x - playerRB.position.x), 0)));
+
+        // Checks if the players mouse is within a certain range of the player and also if its on the left or right of them to 
+        if (aimObject.position.x > playerRB.position.x && aimObject.position.x < playerRB.position.x + 2) 
+        {
+            animations.setDirection("Right");
+        }
+        else if (aimObject.position.x < playerRB.position.x && aimObject.position.x > playerRB.position.x - 2)
+        {
+            animations.setDirection("Left");
+        }
     }
 
     void OnAim(InputValue mouseInput)

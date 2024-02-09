@@ -60,8 +60,8 @@ public class PlayerMovement : MonoBehaviour
     // The players collider, needed for adjusting its size when crouching
     CapsuleCollider playerCollider;
 
-    // The animator that manages the players animations
-    Animator playerAnimator;
+    // The script that controls player animations
+    PlayerAnimations animations;
 
     // Start is called before the first frame update
     void Start()
@@ -84,8 +84,8 @@ public class PlayerMovement : MonoBehaviour
         // Calculates the ray length based on the players height and the offset
         rayLength = playerCollider.height / 2 + 0.1f;
 
-        // Gets the animator
-        playerAnimator = GetComponentInChildren<Animator>();
+        // Gets the animation script
+        animations = GetComponent<PlayerAnimations>();
     }
 
     // FixedUpdate is called dynamically for physics based operations
@@ -96,13 +96,14 @@ public class PlayerMovement : MonoBehaviour
             // Applies force to players rigidbody based on the input
             playerRB.AddForce(movementData * speed);
 
+            // Sets the running animation on or off based on movement
             if (movementData.x != 0)
             {
-                playerAnimator.SetBool("Running", true);
+                animations.setRun(true);
             }
             else
             {
-                playerAnimator.SetBool("Running", false);
+                animations.setRun(false);
             }
         }
 
@@ -127,6 +128,9 @@ public class PlayerMovement : MonoBehaviour
         {
             // Zeros out the players up and down movement on being grounded so they do not actually touch the ground
             playerRB.velocity = new Vector3(playerRB.velocity.x, 0f, playerRB.velocity.z);
+
+            // Stops the jump animation
+            animations.setJump(false);
 
             // Tells the code the player is no longer airborne
             playerAirborne = false;
@@ -185,6 +189,9 @@ public class PlayerMovement : MonoBehaviour
             // Adds upward force to the player with impulse, so only once application
             playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
+            // Sets the jump animation to play
+            animations.setJump(true);
+
             // Sets the hold timer which is used in fixed update above
             jumpHoldTimer = 0.5f;
         }
@@ -200,11 +207,13 @@ public class PlayerMovement : MonoBehaviour
         {
             playerCollider.height = 1.5f;
             playerCollider.center = new Vector3(0, -0.5f, 0);
+            animations.setCrouch(true);
         }
         else if (!isCrouched)
         {
             playerCollider.height = 3;
             playerCollider.center = Vector3.zero;
+            animations.setCrouch(false);
         }
     }
 }
