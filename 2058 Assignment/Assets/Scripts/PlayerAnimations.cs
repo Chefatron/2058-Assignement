@@ -33,6 +33,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void setCrouch(bool state)
     {
+        // Sets the crouch parameter to the fed in state
         playerAnimator.SetBool("Crouching", state);
     }
 
@@ -55,5 +56,11 @@ public class PlayerAnimations : MonoBehaviour
             // Sets the left parameter to true
             playerAnimator.SetBool("Left", true);
         }
+    }
+
+    public void setAttacking(int stage) 
+    {
+        // Sets the attacking parameter to the fed in state
+        playerAnimator.SetInteger("AttackStage", stage);
     }
 }

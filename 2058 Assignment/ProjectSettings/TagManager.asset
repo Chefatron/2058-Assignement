@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Architecture
   - Lighting
+  - Enemy
   layers:
   - Default
   - TransparentFX
