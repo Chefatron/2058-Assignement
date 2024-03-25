@@ -17,12 +17,16 @@ public class isAttackable : MonoBehaviour
     // Used for smaller hits in combos does a little bit of damage and knockback
     public void smallHit(Vector3 knockbackDirection)
     {
+        objectRB.velocity = Vector3.zero;
+
         objectRB.AddForce(knockbackDirection, ForceMode.Impulse);
     }
 
     // Used for final or heavy hits in combos does a good amount of damage and knockback
     public void largeHit(Vector3 knockbackDirection) 
     {
+        objectRB.velocity = Vector3.zero;
+
         objectRB.AddForce(knockbackDirection * 10f, ForceMode.Impulse);
     }
 }

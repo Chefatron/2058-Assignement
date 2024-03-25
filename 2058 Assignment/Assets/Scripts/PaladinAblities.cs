@@ -11,8 +11,20 @@ public class PaladinAblities : MonoBehaviour
     // Used to tell if the player is currently in a combo
     bool inCombo;
 
+    // Used to tell if the player is in cooldown
+    bool inCooldown;
+
+    // Used to check if the player is currently in the spin attack
+    bool inSpin;
+
+    // Used to know how much time the spin attack should be run for
+    float spinTimer;
+
     // A float that will be used to count the time between inputs to see if the player continues their combo or restarts
     float attackBuffer;
+
+    // Used to force the player to wait a little bit before they can attack again
+    float attackCooldown;
 
     // The script that handles the player animations
     PlayerAnimations animations;
@@ -54,9 +66,69 @@ public class PaladinAblities : MonoBehaviour
                 // Since the buffer ran out the combo must be cancelled
                 inCombo = false;
 
+                // Resets the stage as the player exited the combo
                 attackStage = 0;
 
+                // Updates animations based on combo stage
                 animations.setAttacking(attackStage);
+            }
+        }
+
+        // Checks if the player is on a cool down
+        if (inCooldown)
+        {
+            // Checks if the cool down still has value and decrements it if so, allows another attack when it runs out 
+            if (attackCooldown > 0)
+            {
+                attackCooldown = attackCooldown - Time.deltaTime;
+            }
+            else if (attackStage == 3)
+            {
+
+                // Sets the cool down number to exact zero just in case
+                attackCooldown = 0;
+
+                // Resets attack variables so a new attack can begin
+                inCooldown = false;
+                attackStage = 0;
+
+                // Updates animations based on combo stage
+                animations.setAttacking(attackStage);
+            }
+            else
+            {
+                // Sets the cool down number to exact zero just in case
+                attackCooldown = 0;
+
+                // Resets the cooldown variable so a new attack can start
+                inCooldown = false;
+            }
+        }
+
+        // Checks if the spin attack should currently be happening
+        if (inSpin)
+        {
+            // Manages the spin timer and does the correct damage and knockback calls
+            if (spinTimer > 0) 
+            {
+                for (int i = 0; i < objectsInRange.Count; i++)
+                {
+                    // Calls the small hit function from the isAttackable function
+                    objectsInRange[i].GetComponent<isAttackable>().smallHit(gameObject.GetComponent<Transform>().forward + (gameObject.GetComponent<Transform>().up * 0.5f) * 0.1f);
+                }
+
+                spinTimer = spinTimer - Time.deltaTime;
+            }
+            else
+            {
+                for (int i = 0; i < objectsInRange.Count; i++)
+                {
+                    // Calls the small hit function from the isAttackable function
+                    objectsInRange[i].GetComponent<isAttackable>().largeHit(gameObject.GetComponent<Transform>().up);
+                }
+
+                // Disables spin attack
+                inSpin = false;
             }
         }
     }
@@ -64,56 +136,83 @@ public class PaladinAblities : MonoBehaviour
     // Called when the player presses the attack input (mouse 1 or maybe right trigger)
     void OnAttack()
     {
-        // If statement checks the attack stage and does the corresponding attack funcitons
-        if (attackStage == 0) 
+        // Checks if the player isn't in cooldown
+        if (inCooldown == false)
         {
-            for (int i = 0; i < objectsInRange.Count; i++) 
+            // Checks if the attack stage is on the final stage right now and resets it if so
+            if (attackStage == 3)
             {
-                // Calls the small hit function from the isAttackable function
-                objectsInRange[i].GetComponent<isAttackable>().smallHit(-gameObject.GetComponent<Transform>().up);
+                attackStage = 0;
             }
 
-            // Sets the timed attack buffer
-            attackBuffer = 2;
-
-            // Now the combo has started the status must be set to isAttacking
-            inCombo = true;
-        }
-        else if (attackStage == 1 && inCombo == true) 
-        {
-            for (int i = 0; i < objectsInRange.Count; i++)
+            // If statement checks the attack stage and does the corresponding attack funcitons
+            if (attackStage == 0)
             {
-                // Calls the small hit function from the isAttackable function
-                objectsInRange[i].GetComponent<isAttackable>().smallHit(gameObject.GetComponent<Transform>().forward);                
+                for (int i = 0; i < objectsInRange.Count; i++)
+                {
+                    // Calls the small hit function from the isAttackable function
+                    objectsInRange[i].GetComponent<isAttackable>().largeHit(-gameObject.GetComponent<Transform>().up);
+                }
+
+                // Sets the timed attack buffer
+                attackBuffer = 2f;
+
+                // Now the combo has started the status must be set to isAttacking
+                inCombo = true;
+
+                // Increments the attack stage
+                attackStage++;
+
+                // Sets a cooldown so the player can't move to the next stage of attack until it runs out
+                inCooldown = true;
+
+                // Gives a small countdown since the swing animation is short
+                attackCooldown = 0.25f;
+            }
+            else if (attackStage == 1 && inCombo == true)
+            {
+                for (int i = 0; i < objectsInRange.Count; i++)
+                {
+                    // Calls the small hit function from the isAttackable function
+                    objectsInRange[i].GetComponent<isAttackable>().smallHit(gameObject.GetComponent<Transform>().forward);
+                }
+
+                // Sets the timed attack buffer
+                attackBuffer = 2f;
+
+                // Increments the attack stage
+                attackStage++;
+
+                // Sets a cooldown so the player can't move to the next stage of attack until it runs out
+                inCooldown = true;
+
+                // Gives a small countdown since the jab animation is short
+                attackCooldown = 0.5f;
+            }
+            else if (attackStage == 2 && inCombo == true)
+            {
+                // Sets the in spin condition to true so the funny little hits from the spin can be calculated
+                inSpin = true;
+
+                // Sets the attack time as in how long the hammer spins basically
+                spinTimer = 1f;
+
+                // Ends the combo
+                inCombo = false;
+
+                // Increments the attack stage
+                attackStage++;
+
+                // Puts the player in cooldown
+                inCooldown = true;
+
+                // Sets the cooldown for the next attack
+                attackCooldown = 1f;
             }
 
-            // Sets the timed attack buffer
-            attackBuffer = 2;
+            // Updates animations based on combo stage
+            animations.setAttacking(attackStage);
         }
-        else if (attackStage == 2 && inCombo == true)
-        {
-            for (int i = 0; i < objectsInRange.Count; i++)
-            {
-                // Calls the large hit function from the isAttackable function
-                objectsInRange[i].GetComponent<isAttackable>().largeHit(gameObject.GetComponent<Transform>().up);
-            }
-
-            // Ends the combo
-            inCombo = false;
-        }
-
-        // Increments the attack stage or resets it based on position in combo
-        if (attackStage < 2)
-        {
-            attackStage++;
-        }
-        else
-        {
-            attackStage = 0;
-        }
-
-        // Updates animations based on combo stage
-        animations.setAttacking(attackStage);
     }
 
     private void OnTriggerEnter(Collider other)

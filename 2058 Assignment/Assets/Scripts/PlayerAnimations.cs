@@ -13,12 +13,6 @@ public class PlayerAnimations : MonoBehaviour
         playerAnimator = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void setRun(bool state)
     {
         // Sets the running parameter to the fed in state
