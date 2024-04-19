@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e709780fc3e4a940bb24d69ef461564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackStage: 0
 --- !u!1 &381851406
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277951828}
   - component: {fileID: 1277951829}
+  - component: {fileID: 1277951830}
   m_Layer: 0
   m_Name: Hammer Box
   m_TagString: Untagged
@@ -860,12 +862,24 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.015, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0.0005}
+--- !u!114 &1277951830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277951827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c82827e15c79d4e90df1624dca337c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1813373249
 GameObject:
   m_ObjectHideFlags: 0

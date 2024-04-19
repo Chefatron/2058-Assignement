@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PaladinAblities : MonoBehaviour
 {
+
     //// Used to tell which stage of the attack combo the player is in
     //int attackStage;
 
@@ -233,15 +235,13 @@ public class PaladinAblities : MonoBehaviour
     //}
 
     // Used to tell which stage of the attack combo the player is in
-    int attackStage;
+    public int attackStage;
 
     // Used to tell if the player is currently in a combo
     bool inCombo;
 
     // Used to tell if the player is in cooldown
     bool inCooldown;
-
-    bool inSpin;
 
     // A float that will be used to count the time between inputs to see if the player continues their combo or restarts
     float attackBuffer;
@@ -252,20 +252,11 @@ public class PaladinAblities : MonoBehaviour
     // The script that handles the player animations
     PlayerAnimations animations;
 
-    // The trigger box in front of the player that determins thier attack range
-    BoxCollider hammerBox;
-
-    // A list that will be used to run through all of the game objects in the attack range when the player attacks
-    List<isAttackable> objectsInRange = new List<isAttackable>();
-
     // Start is called before the first frame update
     void Start()
     {
         // Sets the defualt of stage 0 or not attacking
         attackStage = 0;
-
-        // Gets the trigger from the player
-        hammerBox = GetComponent<BoxCollider>();
 
         // Gets the animation script
         animations = GetComponent<PlayerAnimations>();
@@ -307,7 +298,11 @@ public class PaladinAblities : MonoBehaviour
             }
             else if (attackStage == 3)
             {
-
+                attackStage = 4;
+                attackCooldown = 0.75f;
+            }
+            else if (attackStage == 4)
+            {
                 // Sets the cool down number to exact zero just in case
                 attackCooldown = 0;
 
@@ -375,9 +370,8 @@ public class PaladinAblities : MonoBehaviour
             }
             else if (attackStage == 2 && inCombo == true) // Spin
             {
-                inSpin = true;
-
-                attackBuffer = 0;
+                // Sets no time for the attack buffer as its the end of the attack
+                attackBuffer = 0f;
 
                 // Ends the combo
                 inCombo = false;
@@ -389,37 +383,11 @@ public class PaladinAblities : MonoBehaviour
                 inCooldown = true;
 
                 // Sets the cooldown for the next attack
-                attackCooldown = 1f;
+                attackCooldown = 0.75f;
             }
 
             // Updates animations based on combo stage
             animations.setAttacking(attackStage);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        // Tries to add the is attackable script from the object to the list
-        try
-        {
-            objectsInRange.Add(other.gameObject.GetComponent<isAttackable>());
-        }
-        catch(Exception e) 
-        { 
-        
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        // Tries to remove the object that left the trigger from the list
-        try
-        {
-            objectsInRange.Remove(other.gameObject.GetComponent<isAttackable>());
-        }
-        catch(Exception e)
-        {
-
         }
     }
 }
