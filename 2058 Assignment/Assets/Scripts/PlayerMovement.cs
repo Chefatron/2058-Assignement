@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] int airSpeed;
     [SerializeField] int groundSpeed;
 
-    // So we need both of these because some
     // Used to check if the player is touching the ground
     bool playerGrounded;
 
@@ -70,10 +69,8 @@ public class PlayerMovement : MonoBehaviour
         playerRB = GetComponent<Rigidbody>();
 
         // Sets the player to defualt state of grounded
-        playerGrounded = false;
-
-        // Sets the player to the defualt state of airborne
-        playerAirborne = true;
+        playerGrounded = true;
+        playerAirborne = false;
 
         // Defaults is jumping to false
         isJumping = false;

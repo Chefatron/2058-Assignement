@@ -71,7 +71,7 @@ public class HammerCollision : MonoBehaviour
             {
                 for (int i = 0; i < objectsInRange.Count; i++)
                 {
-                    objectsInRange[i].smallHit((transform.forward * 0.25f) + (transform.up * 0.25f));
+                    objectsInRange[i].smallHit((transform.forward * 0.5f) + (transform.up * 0.25f));
                 }
             }
             else if (paladinAttacks.attackStage == 4)

@@ -298,8 +298,9 @@ public class PaladinAblities : MonoBehaviour
             }
             else if (attackStage == 3)
             {
+                // Sets the attack to the final stage of four for the final up hit of the spin attack
                 attackStage = 4;
-                attackCooldown = 0.5f;
+                attackCooldown = 0.3f;
             }
             else if (attackStage == 4)
             {
@@ -331,7 +332,7 @@ public class PaladinAblities : MonoBehaviour
         if (inCooldown == false)
         {
             // Checks if the attack stage is on the final stage right now and resets it if so
-            if (attackStage == 3)
+            if (attackStage == 4)
             {
                 attackStage = 0;
             }
@@ -340,7 +341,7 @@ public class PaladinAblities : MonoBehaviour
             if (attackStage == 0) // Swing
             {
                 // Sets the timed attack buffer
-                attackBuffer = 2f;
+                attackBuffer = 1f;
 
                 // Now the combo has started the status must be set to isAttacking
                 inCombo = true;
@@ -357,7 +358,7 @@ public class PaladinAblities : MonoBehaviour
             else if (attackStage == 1 && inCombo == true) // Jab
             {
                 // Sets the timed attack buffer
-                attackBuffer = 2f;
+                attackBuffer = 1f;
 
                 // Increments the attack stage
                 attackStage++;
