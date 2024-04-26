@@ -15,6 +15,9 @@ public class isAttackable : MonoBehaviour
     {
         // Gets the RB
         objectRB = GetComponent<Rigidbody>();
+
+        // Sets default to was not hit
+        wasHit = false;
     }
 
     // Used for smaller hits in combos does a little bit of damage and knockback

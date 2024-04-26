@@ -299,7 +299,7 @@ public class PaladinAblities : MonoBehaviour
             else if (attackStage == 3)
             {
                 attackStage = 4;
-                attackCooldown = 0.75f;
+                attackCooldown = 0.5f;
             }
             else if (attackStage == 4)
             {
@@ -383,7 +383,7 @@ public class PaladinAblities : MonoBehaviour
                 inCooldown = true;
 
                 // Sets the cooldown for the next attack
-                attackCooldown = 0.75f;
+                attackCooldown = 1f;
             }
 
             // Updates animations based on combo stage

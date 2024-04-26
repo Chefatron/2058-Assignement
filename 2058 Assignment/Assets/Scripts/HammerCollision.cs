@@ -80,7 +80,7 @@ public class HammerCollision : MonoBehaviour
                 {
                     if (objectsInRange[i].wasHit == false)
                     {
-                        objectsInRange[i].largeHit(transform.forward);
+                        objectsInRange[i].largeHit(paladinAttacks.transform.up);
 
                         objectsInRange[i].wasHit = true;
                     }
