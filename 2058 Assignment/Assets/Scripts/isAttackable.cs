@@ -12,10 +12,7 @@ public class isAttackable : MonoBehaviour
     public bool wasHit;
 
     // Used to disable the nav mesh agent on being hit so the enemies that have this script can be knocked up or back
-    NavMeshAgent agent;
-
-    // Used to know for how long an enemy with this script should be incapacitated
-    float recoveryTimer;
+    EnemyAI enemy;
 
     // Start is called before the first frame update
     void Start()
@@ -27,26 +24,15 @@ public class isAttackable : MonoBehaviour
         wasHit = false;
 
         // Gets agent if it has one
-        if (gameObject.GetComponent<NavMeshAgent>())
+        if (gameObject.GetComponent<EnemyAI>())
         {
-            agent = gameObject.GetComponent<NavMeshAgent>();
+            enemy = gameObject.GetComponent<EnemyAI>();
         }
-
-        recoveryTimer = 0f;
     }
 
     private void Update()
     {
-        if (recoveryTimer > 0f)
-        {
-            recoveryTimer = recoveryTimer - Time.deltaTime;
-        }
-        else
-        {
-            recoveryTimer = 0f;
 
-            agent.enabled = true;
-        }
     }
 
     // Used for smaller hits in combos does a little bit of damage and knockback
@@ -58,9 +44,7 @@ public class isAttackable : MonoBehaviour
 
             objectRB.AddForce(knockbackDirection, ForceMode.Impulse);
 
-            agent.enabled = false;
-
-            recoveryTimer = 1f;
+            enemy.knock(2f);
         }  
     }
 
@@ -73,9 +57,7 @@ public class isAttackable : MonoBehaviour
 
             objectRB.AddForce(knockbackDirection * 10f, ForceMode.Impulse);
 
-            agent.enabled = false;
-
-            recoveryTimer = 3f;
+            enemy.knock(4f);
         }  
     }
 }

@@ -51,4 +51,13 @@ public class EnemyAnimations : MonoBehaviour
         // Sets the attacking parameter to the fed in state
         enemyAnimator.SetBool("Attacking", state);
     }
+
+    public void falseAll()
+    {
+        enemyAnimator.SetBool("Attacking", false);
+
+        enemyAnimator.SetBool("Running", false);
+
+        enemyAnimator.SetBool("Jumping", false);
+    }
 }

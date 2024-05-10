@@ -62,12 +62,5 @@ public class PlayerAim : MonoBehaviour
     {
         // Gets the vector 2 from the mouse pos
         mousePosition = mouseInput.Get<Vector2>();
-
-        //Debug.Log("-----------------------------------------------");
-        //Debug.Log("-----------------------------------------------");
-        //Debug.Log("-----------------------------------------------");
-        //Debug.Log("This is the x value: " + mousePosition.x);
-        //Debug.Log("-----------------------------------------------");
-        //Debug.Log("This is the y value: " + mousePosition.y);
     }
 }

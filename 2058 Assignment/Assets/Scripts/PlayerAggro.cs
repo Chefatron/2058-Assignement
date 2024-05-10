@@ -21,9 +21,9 @@ public class PlayerAggro : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<EnemyAI>())
+        if (other.GetComponent<EnemyAI>() && other.GetComponent<EnemyAI>().state != 3)
         {
-            other.GetComponent<EnemyAI>().state = 2;
+            other.GetComponent<EnemyAI>().state = 1;
         }
     }
 }
