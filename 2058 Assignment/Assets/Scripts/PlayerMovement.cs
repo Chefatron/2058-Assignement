@@ -212,6 +212,7 @@ public class PlayerMovement : MonoBehaviour
             playerCollider.height = 1.5f;
             playerCollider.center = new Vector3(0, -0.5f, 0);
             animations.setCrouch(true);
+            animations.setRun(false);
         }
         else if (!isCrouched)
         {

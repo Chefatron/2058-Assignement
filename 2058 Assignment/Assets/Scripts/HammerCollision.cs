@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HammerCollision : MonoBehaviour
@@ -38,6 +40,11 @@ public class HammerCollision : MonoBehaviour
                 for (int i = 0; i < objectsInRange.Count; i++)
                 {
                     objectsInRange[i].wasHit = false;
+
+                    if (objectsInRange[i] == null) 
+                    { 
+                        objectsInRange.RemoveAt(i);
+                    }
                 }
 
                 currentStage = paladinAttacks.attackStage;

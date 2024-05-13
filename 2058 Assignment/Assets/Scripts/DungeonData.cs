@@ -7,4 +7,6 @@ using UnityEngine;
 public class DungeonData : ScriptableObject
 {
     public List<Vector3> spawnPoints = new List<Vector3>();
+
+    public Vector3 playerSpawn;
 }

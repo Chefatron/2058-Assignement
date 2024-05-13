@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,18 +15,32 @@ public class GameManager : MonoBehaviour
     // The enemy to spawn
     [SerializeField] List<GameObject> enemies;
 
+    // Used to spawn the player in the right place
+    [SerializeField] GameObject player;
+
+    // Exit door of the level
+    [SerializeField] BoxCollider exit;
+
+    // Used for setting the target of the camera to the spawned player
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
+
     // Used to space out enemy spawns
     float spawnInterval;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Sets defualt spawn interval
         spawnInterval = 1f;
+
+        // Spawns player in point grabbed from dungeon data and sets the camera to follow it
+        virtualCamera.Follow = Instantiate(player, dungeonData.playerSpawn, Quaternion.identity).transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Checks if player is killed
         if (playerAttributes.playerHP <= 0)
         {
             playerAttributes.resetValues();
@@ -33,6 +48,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+        // Checks spawn timer and spawns and enemy if it runs out, then resets it
         if (spawnInterval > 0)
         {
             spawnInterval = spawnInterval - Time.deltaTime;
@@ -48,6 +64,11 @@ public class GameManager : MonoBehaviour
     void spawnEnemy()
     {
         // Spawns an enemy at a random one of the spawn points
-        Instantiate(enemies[Random.Range(0, 2)], dungeonData.spawnPoints[Random.Range(0, 6)], Quaternion.identity);
+        Instantiate(enemies[Random.Range(0, enemies.Count)], dungeonData.spawnPoints[Random.Range(0, dungeonData.spawnPoints.Count)], Quaternion.identity);
+    }
+
+    public void nextScene()
+    {
+        SceneManager.LoadScene(Random.Range(0, 1));
     }
 }

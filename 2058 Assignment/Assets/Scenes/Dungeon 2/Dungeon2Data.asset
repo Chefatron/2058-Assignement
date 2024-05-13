@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac10fe8e88f38e940b3927d1c96cccdf, type: 3}
-  m_Name: Dungeon1Data
+  m_Name: Dungeon2Data
   m_EditorClassIdentifier: 
   spawnPoints:
-  - {x: 10, y: 2.5, z: 0}
-  - {x: -22.25, y: 2.5, z: 0}
-  - {x: -20, y: 7.5, z: 0}
-  - {x: 20, y: 7.5, z: 0}
-  - {x: 7.5, y: 17.5, z: 0}
-  - {x: -22.5, y: 17.5, z: 0}
-  - {x: 15, y: 22.5, z: 0}
+  - {x: 13.75, y: 2.5, z: 0}
+  - {x: -20.25, y: 2.5, z: 0}
+  - {x: -7.25, y: 7.5, z: 0}
+  - {x: -20.5, y: 17.75, z: 0}
+  - {x: 13.75, y: 22.5, z: 0}
   playerSpawn: {x: -21.58, y: 22.1, z: 0}
