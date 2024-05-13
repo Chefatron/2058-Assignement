@@ -81,8 +81,9 @@ public class PlayerMovement : MonoBehaviour
         // Gets the capsule collider
         playerCollider = GetComponent<CapsuleCollider>();
 
-        // Calculates the ray length based on the players height and the offset
-        rayLength = playerCollider.height / 2 + 0.1f;
+        // Calculates the ray length based on the player colliders distance from the floor plus an offset
+        Physics.Raycast(playerRB.position, Vector3.down, out groundHit, ground);
+        rayLength = Vector3.Distance(playerRB.position, groundHit.point) + 0.1f;
 
         // Gets the animation script
         animations = GetComponent<PlayerAnimations>();

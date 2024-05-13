@@ -36,13 +36,25 @@ public class EnemyAI : MonoBehaviour
     float attackinterval;
 
     // Self explanatory
-    float enemyHealth;
+    [SerializeField] float enemyHealth;
+
+    // How much damage the enemy does
+    [SerializeField] int enemyDamage;
+
+    // Speed of the enemy
+    [SerializeField] int enemySpeed;
+
+    // Couldn't think of a better name but it basically controls how far their idle paths branch from origin
+    [SerializeField] float idleStretch;
 
     // Start is called before the first frame update
     void Start()
     {
         // Get the nav agent
         enemy = GetComponent<NavMeshAgent>();
+
+        // Set the enemy speed based on the editor value
+        enemy.speed = enemySpeed;
 
         // Get the animations
         animations = GetComponentInChildren<EnemyAnimations>();
@@ -55,8 +67,6 @@ public class EnemyAI : MonoBehaviour
         
         // Set defualt of 2 seconds
         attackinterval = 2f;
-
-        enemyHealth = 20;
     }
 
     // Update is called once per frame
@@ -65,7 +75,7 @@ public class EnemyAI : MonoBehaviour
         if (state == 0)
         {
             // Changes the offset to the enemies position based on a sin wave
-            positionOffset = Mathf.Sin(Time.time);
+            positionOffset = Mathf.Sin(Time.time * idleStretch);
 
             // Updates the enemy destination
             enemy.destination = new Vector3(transform.position.x + positionOffset, transform.position.y, transform.position.z);
@@ -98,7 +108,7 @@ public class EnemyAI : MonoBehaviour
             // Checks if attack interval has reached zero and damages the player if so resetting the timer
             if (attackinterval <= 0)
             {
-                player.playerHP -= 1;
+                player.playerHP -= enemyDamage;
 
                 animations.setAttacking(true);
 
