@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Used to get the speed multiplier attribute from the player attributes scriptable object
+    [SerializeField] PlayerAttributes playerAttributes;
+
     // Used to get the vector 2 from the input data
     float keyData;
 
@@ -91,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isCrouched)
         {
             // Applies force to players rigidbody based on the input
-            playerRB.AddForce(movementData * speed);
+            playerRB.AddForce(movementData * speed * playerAttributes.playerSpeedMultiplier);
 
             // Sets the running animation on or off based on movement
             if (movementData.x != 0)
@@ -142,6 +145,9 @@ public class PlayerMovement : MonoBehaviour
             // Reduces timer
             jumpHoldTimer = jumpHoldTimer - Time.deltaTime;
         }
+
+        // Updates the player position
+        playerAttributes.playerPosition = playerRB.position;
     }
 
     private void Update()

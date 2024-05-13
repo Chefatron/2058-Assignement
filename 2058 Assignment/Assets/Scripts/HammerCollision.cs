@@ -43,7 +43,7 @@ public class HammerCollision : MonoBehaviour
                 currentStage = paladinAttacks.attackStage;
             }
 
-            if (paladinAttacks.attackStage == 1)
+            if (currentStage == 1)
             {
                 for(int i = 0; i < objectsInRange.Count; i++) 
                 {
@@ -55,26 +55,26 @@ public class HammerCollision : MonoBehaviour
                     }
                 }
             }
-            else if (paladinAttacks.attackStage == 2)
+            else if (currentStage == 2)
             {
                 for (int i = 0; i < objectsInRange.Count; i++)
                 {
                     if (objectsInRange[i].wasHit == false)
                     {
-                        objectsInRange[i].smallHit(transform.up);
+                        objectsInRange[i].mediumHit(transform.up);
 
                         objectsInRange[i].wasHit = true;
                     }
                 }
             }
-            else if (paladinAttacks.attackStage == 3)
+            else if (currentStage == 3)
             {
                 for (int i = 0; i < objectsInRange.Count; i++)
                 {
-                    objectsInRange[i].smallHit((transform.forward * 0.5f) + (transform.up * 0.25f));
+                    objectsInRange[i].smallHit(transform.forward + (transform.up * 0.5f));
                 }
             }
-            else if (paladinAttacks.attackStage == 4)
+            else if (currentStage == 4)
             {
                 for (int i = 0; i < objectsInRange.Count; i++)
                 {

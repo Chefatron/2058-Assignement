@@ -7,8 +7,8 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    // The player
-    GameObject player;
+    // Used for getting a variety of into from the player that the enemy needs to know how to act
+    [SerializeField] PlayerAttributes player;
 
     // The nav mesh component for moving the enemy
     NavMeshAgent enemy;
@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
     // Used to keep track of what actions the enemy should be taking
     // 0 = idle // Walking back and forth
     // 1 = chasing player
-    // 2 = attacking // Standing next to player attacking is in another script
+    // 2 = attacking 
     // 3 = knocked // Navmesh ai disabled
     public int state;
 
@@ -32,12 +32,15 @@ public class EnemyAI : MonoBehaviour
     // The visible object of the enemy, used to make the enemy snap face left and right
     Transform mesh;
 
+    // Used to space out the enemies attacks
+    float attackinterval;
+
+    // Self explanatory
+    float enemyHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-        // Find the player
-        player = GameObject.Find("Player");
-
         // Get the nav agent
         enemy = GetComponent<NavMeshAgent>();
 
@@ -47,7 +50,13 @@ public class EnemyAI : MonoBehaviour
         // Sets the defualt state to idle
         state = 0;
         
+        // Used for having the same snappy left and right turning the player without affecting the dynamic movement of the nav agent
         mesh = gameObject.GetComponentInChildren<Transform>();
+        
+        // Set defualt of 2 seconds
+        attackinterval = 2f;
+
+        enemyHealth = 20;
     }
 
     // Update is called once per frame
@@ -64,7 +73,7 @@ public class EnemyAI : MonoBehaviour
         else if (state == 1)
         {
             // Sets the target to the players position
-            enemy.destination = player.transform.position;
+            enemy.destination = player.playerPosition;
 
             // Checks if the enemy is within a certain distance of the player
             if (enemy.remainingDistance < 2f)
@@ -72,21 +81,36 @@ public class EnemyAI : MonoBehaviour
                 state = 2;
 
                 enemy.isStopped = true;
-
-                animations.setAttacking(true);
             }
         }
         else if (state == 2)
         {
             // Checks if the player gets a certain distance away from the enemy
-            if (Vector3.Distance(enemy.transform.position, player.transform.position) > 4f) 
+            if (Vector3.Distance(enemy.transform.position, player.playerPosition) > 2f) 
             {
                 state = 1;
 
-                animations.setAttacking(false);
-
                 enemy.isStopped = false;
+
+                attackinterval = 2f;
             }
+
+            // Checks if attack interval has reached zero and damages the player if so resetting the timer
+            if (attackinterval <= 0)
+            {
+                player.playerHP -= 1;
+
+                animations.setAttacking(true);
+
+                attackinterval = 2f;
+            }
+            else
+            {
+                attackinterval = attackinterval - Time.deltaTime;
+
+                animations.setAttacking(false);
+            }
+
         }
         else if (state == 3)
         {
@@ -117,7 +141,18 @@ public class EnemyAI : MonoBehaviour
             animations.setRun(false);
         }
 
+        // Rotates the mesh
         mesh.rotation = (Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(enemy.destination.x - mesh.position.x), 0)));
+
+        // Sets left and right animations based on the destinations position
+        if (enemy.destination.x > transform.position.x && enemy.destination.x < transform.position.x + 2)
+        {
+            animations.setDirection("Right");
+        }
+        else if (enemy.destination.x < transform.position.x && enemy.destination.x > transform.position.x - 2)
+        {
+            animations.setDirection("Left");
+        }
     }
 
     public void knock(float time)
@@ -133,5 +168,22 @@ public class EnemyAI : MonoBehaviour
 
         // Disables all animations
         animations.falseAll();
+    }
+
+    public void damage(float damage)
+    {
+        enemyHealth = enemyHealth - damage;
+
+        if (enemyHealth <= 0) 
+        {
+            kill();
+        }
+    }
+
+    void kill()
+    {
+        enemy.enabled = false;
+
+        Destroy(gameObject, 5f);
     }
 }

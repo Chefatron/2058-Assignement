@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerAim : MonoBehaviour
 {
+    // Using this to tell when the player is attacking so the player can't turn mid attack
+    [SerializeField] PlayerAttributes playerAttributes;
+
     // The screen coordinates of the mouse
     Vector2 mousePosition;
 
@@ -48,11 +51,11 @@ public class PlayerAim : MonoBehaviour
         playerRB.MoveRotation(Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(aimObject.transform.position.x - playerRB.position.x), 0)));
 
         // Checks if the players mouse is within a certain range of the player and also if its on the left or right of them to 
-        if (aimObject.position.x > playerRB.position.x && aimObject.position.x < playerRB.position.x + 2) 
+        if (aimObject.position.x > playerRB.position.x) 
         {
             animations.setDirection("Right");
         }
-        else if (aimObject.position.x < playerRB.position.x && aimObject.position.x > playerRB.position.x - 2)
+        else if (aimObject.position.x < playerRB.position.x)
         {
             animations.setDirection("Left");
         }
@@ -60,7 +63,10 @@ public class PlayerAim : MonoBehaviour
 
     void OnAim(InputValue mouseInput)
     {
-        // Gets the vector 2 from the mouse pos
-        mousePosition = mouseInput.Get<Vector2>();
+        if (playerAttributes.playerSpeedMultiplier != 0.1f)
+        {
+            // Gets the vector 2 from the mouse pos
+            mousePosition = mouseInput.Get<Vector2>();
+        }
     }
 }

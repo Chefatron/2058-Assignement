@@ -988,7 +988,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 209638663}
-  - {fileID: 566337142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!54 &302012199
@@ -1060,6 +1059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20c1887acc16ae243ad884249fe7b734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAttributes: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
   jumpForce: 10
   speed: 0
   airDrag: 1
@@ -1082,6 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466412f99cf751047bcc9cc837c88b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAttributes: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
   aimObject: {fileID: 1813373250}
   aimLayer:
     serializedVersion: 2
@@ -1110,6 +1111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e709780fc3e4a940bb24d69ef461564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAttributes: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
   attackStage: 0
 --- !u!65 &302012205
 BoxCollider:
@@ -1144,6 +1146,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d76341b91f03db47a903139a65ee8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &391023393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391023395}
+  - component: {fileID: 391023394}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &391023394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391023393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cc09e33084bbf4bb9e1ccc86484aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAttributes: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
+--- !u!4 &391023395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391023393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.576736, y: 1.693428, z: 2.867072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &431763522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,37 +1264,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c9df75f2afcdb3b4eb04757afbedc85e, type: 3}
   m_PrefabInstance: {fileID: 431763522}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &566337141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 566337142}
-  m_Layer: 0
-  m_Name: Game Manager
-  m_TagString: GameController
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &566337142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566337141}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -4.08, y: -2.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 302012198}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca693bf6fe7578247a4a0afdce438bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
   state: 0
 --- !u!1 &1277951827
 GameObject:
@@ -1981,3 +1998,4 @@ SceneRoots:
   - {fileID: 302012198}
   - {fileID: 1215319767}
   - {fileID: 1605748751}
+  - {fileID: 391023395}

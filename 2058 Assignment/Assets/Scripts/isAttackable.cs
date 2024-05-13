@@ -30,11 +30,6 @@ public class isAttackable : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-
-    }
-
     // Used for smaller hits in combos does a little bit of damage and knockback
     public void smallHit(Vector3 knockbackDirection)
     {
@@ -42,10 +37,27 @@ public class isAttackable : MonoBehaviour
         {
             objectRB.velocity = Vector3.zero;
 
+            objectRB.AddForce(knockbackDirection * 0.25f, ForceMode.Impulse);
+
+            enemy.knock(0.5f);
+
+            enemy.damage(0.05f);
+        }  
+    }
+
+    // Used for smaller hits in combos does a fair bit of damage and knockback
+    public void mediumHit(Vector3 knockbackDirection)
+    {
+        if (wasHit == false)
+        {
+            objectRB.velocity = Vector3.zero;
+
             objectRB.AddForce(knockbackDirection, ForceMode.Impulse);
 
-            enemy.knock(2f);
-        }  
+            enemy.knock(1f);
+
+            enemy.damage(1);
+        }
     }
 
     // Used for final or heavy hits in combos does a good amount of damage and knockback
@@ -57,7 +69,9 @@ public class isAttackable : MonoBehaviour
 
             objectRB.AddForce(knockbackDirection * 10f, ForceMode.Impulse);
 
-            enemy.knock(4f);
+            enemy.knock(2f);
+
+            enemy.damage(3);
         }  
     }
 }
