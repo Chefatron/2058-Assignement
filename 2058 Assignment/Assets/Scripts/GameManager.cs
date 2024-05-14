@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         {
             playerAttributes.resetValues();
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         // Checks spawn timer and spawns and enemy if it runs out, then resets it
@@ -67,8 +67,38 @@ public class GameManager : MonoBehaviour
         Instantiate(enemies[Random.Range(0, enemies.Count)], dungeonData.spawnPoints[Random.Range(0, dungeonData.spawnPoints.Count)], Quaternion.identity);
     }
 
+    // Is called when loading an new level 
     public void nextScene()
     {
-        SceneManager.LoadScene(Random.Range(0, 1));
+        LoadScene(Random.Range(2, SceneManager.sceneCount));
+    }
+
+    // Loads the loading scene and starts loading the desired scene
+    public void LoadScene(int sceneIndex)
+    {
+        // Loads the loading scene
+        SceneManager.LoadSceneAsync(1);
+
+        // Starts the loading of the indexed scene at the same time 
+        StartCoroutine(loadAsyncScene(sceneIndex));
+    }
+
+    // Used to load the desired scene while the loading scene plays
+    IEnumerator loadAsyncScene(int sceneIndex)
+    {
+        // Loads the scene in the background
+        AsyncOperation asyncLoading = SceneManager.LoadSceneAsync(sceneIndex);
+
+        // Checks if the scene is done loading
+        while (asyncLoading != null)
+        {
+            yield return null;
+        }
+    }
+
+    // Quits to main menu
+    public void quitToMenu()
+    {
+        LoadScene(0);
     }
 }
