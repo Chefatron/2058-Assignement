@@ -28,6 +28,18 @@ public class PaladinAblities : MonoBehaviour
     // The script that handles the player animations
     PlayerAnimations animations;
 
+    // Used to tell if the user is currently holding the special button
+    bool isSpecial;
+
+    // Used to tell what the player is aiming at when using their special
+    [SerializeField] BoxCollider aimCollider;
+
+    // Used to swap the positions of the special target and the player
+    EnemyAI target;
+
+    // Used to hold the position of the special targe
+    Vector3 targetPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +51,8 @@ public class PaladinAblities : MonoBehaviour
 
         // Sets defualt speed multi
         playerAttributes.playerSpeedMultiplier = 1f;
+
+        isSpecial = false;
     }
 
     // Update is called once per frame
@@ -177,6 +191,37 @@ public class PaladinAblities : MonoBehaviour
 
             // Updates animations based on combo stage
             animations.setAttacking(attackStage);
+        }
+    }
+
+    // is called on press and release
+    void OnSpecial()
+    {
+        if (isSpecial == true)
+        {
+            targetPos = target.transform.position;
+
+            target.swap(transform.position);
+
+            transform.position = targetPos;
+
+            target = null;
+        }
+
+        isSpecial = !isSpecial;
+
+        playerAttributes.isSpecial = isSpecial;
+
+        animations.setSpecial(isSpecial);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<EnemyAI>())
+        {
+            Debug.Log("enemyFound");
+
+            target = other.GetComponent<EnemyAI>();
         }
     }
 }

@@ -12,6 +12,8 @@ public class PlayerAttributes : ScriptableObject
 
     public Vector3 playerPosition;
 
+    public bool isSpecial;
+
     public void resetValues()
     {
         playerHP = 10;

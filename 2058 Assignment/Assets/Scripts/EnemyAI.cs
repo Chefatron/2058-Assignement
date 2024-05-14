@@ -61,10 +61,10 @@ public class EnemyAI : MonoBehaviour
 
         // Sets the defualt state to idle
         state = 0;
-        
+
         // Used for having the same snappy left and right turning the player without affecting the dynamic movement of the nav agent
         mesh = gameObject.GetComponentInChildren<Transform>();
-        
+
         // Set defualt of 2 seconds
         attackinterval = 2f;
     }
@@ -96,7 +96,7 @@ public class EnemyAI : MonoBehaviour
         else if (state == 2)
         {
             // Checks if the player gets a certain distance away from the enemy
-            if (Vector3.Distance(enemy.transform.position, player.playerPosition) > 4f) 
+            if (Vector3.Distance(enemy.transform.position, player.playerPosition) > 4f)
             {
                 state = 1;
 
@@ -184,7 +184,7 @@ public class EnemyAI : MonoBehaviour
     {
         enemyHealth = enemyHealth - damage;
 
-        if (enemyHealth <= 0) 
+        if (enemyHealth <= 0)
         {
             kill();
         }
@@ -195,5 +195,10 @@ public class EnemyAI : MonoBehaviour
         enemy.enabled = false;
 
         Destroy(gameObject);
+    }
+
+    public void swap(Vector3 destination)
+    {
+        transform.position = destination;
     }
 }

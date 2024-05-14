@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuManager : MonoBehaviour
+public class GameOverManager : MonoBehaviour
 {
-    // Is called when loading a level for the player
-    public void startGame()
+    // Restarts the game for the player
+    public void replayGame()
     {
         LoadScene(Random.Range(2, 4));
-    }
-
-    // Closes the game
-    public void closeGame()
-    {
-        Application.Quit();
     }
 
     // Loads the loading scene and starts loading the desired scene
@@ -40,4 +34,9 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    // Quits to main menu
+    public void quitToMenu()
+    {
+        LoadScene(0);
+    }
 }

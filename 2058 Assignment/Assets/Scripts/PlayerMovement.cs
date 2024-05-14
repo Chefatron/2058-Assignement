@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is called dynamically for physics based operations
     void FixedUpdate()
     {
-        if (!isCrouched)
+        if (!isCrouched && !playerAttributes.isSpecial)
         {
             // Applies force to players rigidbody based on the input
             playerRB.AddForce(movementData * speed * playerAttributes.playerSpeedMultiplier);

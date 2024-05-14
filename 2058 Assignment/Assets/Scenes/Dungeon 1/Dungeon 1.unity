@@ -509,7 +509,6 @@ MonoBehaviour:
   - {fileID: 7623662843639720262, guid: 0169eb26ce9a626478d519d93bda9856, type: 3}
   player: {fileID: 966569332863088637, guid: e28ed46887cec944ab8df08d594bad1d, type: 3}
   exit: {fileID: 2077234090}
-  virtualCamera: {fileID: 1755229809}
 --- !u!4 &391023395
 Transform:
   m_ObjectHideFlags: 0
@@ -2358,6 +2357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755229810}
   - component: {fileID: 1755229809}
+  - component: {fileID: 1755229811}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -2420,6 +2420,19 @@ Transform:
   - {fileID: 2087433772}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755229811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755229808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c926f2502f4b2c4e8da9037b2261698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAttributes: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
 --- !u!1 &1843542579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2796,7 @@ Transform:
   m_GameObject: {fileID: 2000143429}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.569426, y: 5, z: 0}
+  m_LocalPosition: {x: 10, y: 5, z: 0}
   m_LocalScale: {x: 30, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3248,8 +3261,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 391023395}
   - {fileID: 1755229810}
+  - {fileID: 391023395}
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 2058663936}

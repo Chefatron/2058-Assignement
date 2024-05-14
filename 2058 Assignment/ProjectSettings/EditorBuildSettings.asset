@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dungeon 2/Dungeon 2.unity
     guid: db8457df7c6d24c4d83f5260cbbb6a67
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 578c8de492f3ab3418260c748c45e656
   m_configObjects: {}

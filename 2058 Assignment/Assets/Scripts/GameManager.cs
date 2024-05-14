@@ -21,9 +21,6 @@ public class GameManager : MonoBehaviour
     // Exit door of the level
     [SerializeField] BoxCollider exit;
 
-    // Used for setting the target of the camera to the spawned player
-    [SerializeField] CinemachineVirtualCamera virtualCamera;
-
     // Used to space out enemy spawns
     float spawnInterval;
 
@@ -34,7 +31,7 @@ public class GameManager : MonoBehaviour
         spawnInterval = 1f;
 
         // Spawns player in point grabbed from dungeon data and sets the camera to follow it
-        virtualCamera.Follow = Instantiate(player, dungeonData.playerSpawn, Quaternion.identity).transform;
+        Instantiate(player, dungeonData.playerSpawn, Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -45,7 +42,7 @@ public class GameManager : MonoBehaviour
         {
             playerAttributes.resetValues();
 
-            LoadScene(SceneManager.GetActiveScene().buildIndex);
+            LoadScene(SceneManager.sceneCount - 1);
         }
 
         // Checks spawn timer and spawns and enemy if it runs out, then resets it
@@ -70,7 +67,7 @@ public class GameManager : MonoBehaviour
     // Is called when loading an new level 
     public void nextScene()
     {
-        LoadScene(Random.Range(2, SceneManager.sceneCount));
+        LoadScene(Random.Range(2, 4));
     }
 
     // Loads the loading scene and starts loading the desired scene

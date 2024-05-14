@@ -57,4 +57,10 @@ public class PlayerAnimations : MonoBehaviour
         // Sets the attacking parameter to the fed in state
         playerAnimator.SetInteger("AttackStage", stage);
     }
+
+    public void setSpecial(bool state)
+    {
+        // Sets the special parameter to the fed in state
+        playerAnimator.SetBool("Special", state);
+    }
 }
