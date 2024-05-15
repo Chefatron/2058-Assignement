@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
     bool isCrouched;
 
     // The players collider, needed for adjusting its size when crouching
-    CapsuleCollider playerCollider;
+    BoxCollider playerCollider;
 
     // The script that controls player animations
     PlayerAnimations animations;
@@ -79,11 +79,10 @@ public class PlayerMovement : MonoBehaviour
         isJumping = false;
 
         // Gets the capsule collider
-        playerCollider = GetComponent<CapsuleCollider>();
+        playerCollider = GetComponent<BoxCollider>();
 
         // Calculates the ray length based on the player colliders distance from the floor plus an offset
-        Physics.Raycast(playerRB.position, Vector3.down, out groundHit, ground);
-        rayLength = Vector3.Distance(playerRB.position, groundHit.point) + 0.1f;
+        rayLength = playerCollider.size.y + 0.5f;
 
         // Gets the animation script
         animations = GetComponent<PlayerAnimations>();
@@ -209,15 +208,15 @@ public class PlayerMovement : MonoBehaviour
         // Adjusts the size of the players collider based on the state
         if (isCrouched)
         {
-            playerCollider.height = 1.5f;
-            playerCollider.center = new Vector3(0, -0.5f, 0);
+            //playerCollider.height = 1.5f;
+            playerCollider.center = new Vector3(0, 0f, 0);
             animations.setCrouch(true);
             animations.setRun(false);
         }
         else if (!isCrouched)
         {
-            playerCollider.height = 3;
-            playerCollider.center = Vector3.zero;
+            //playerCollider.height = 3;
+            playerCollider.center = new Vector3(0, 0.5f, 0);
             animations.setCrouch(false);
         }
     }

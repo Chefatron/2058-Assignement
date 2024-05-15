@@ -18,6 +18,9 @@ public class HammerCollision : MonoBehaviour
     // List of objects in collision
     List<isAttackable> objectsInRange = new List<isAttackable>();
 
+    // Used to play a particle on connect with an enemy
+    ParticleSystem hitParticles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,8 @@ public class HammerCollision : MonoBehaviour
         currentStage = paladinAttacks.attackStage;
         
         hammerCollider = GetComponent<BoxCollider>();
+
+        hitParticles = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -103,6 +108,10 @@ public class HammerCollision : MonoBehaviour
         {
             // Adds the game object in the range trigger to the list
             objectsInRange.Add(other.GetComponent<isAttackable>());
+        }
+        else if (other.gameObject.CompareTag("Architecture") && paladinAttacks.attackStage == 1 && other.transform.position.y < transform.position.y) // Checks if the hammer hits the ground to do the dust effect
+        {
+            hitParticles.Play();
         }
     }
 

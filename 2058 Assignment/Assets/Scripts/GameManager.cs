@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         {
             playerAttributes.resetValues();
 
-            LoadScene(SceneManager.sceneCount - 1);
+            LoadScene(SceneManager.sceneCountInBuildSettings - 1);
         }
 
         // Checks spawn timer and spawns and enemy if it runs out, then resets it

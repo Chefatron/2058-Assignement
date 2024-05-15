@@ -47,6 +47,9 @@ public class EnemyAI : MonoBehaviour
     // Couldn't think of a better name but it basically controls how far their idle paths branch from origin
     [SerializeField] float idleStretch;
 
+    // Used to play the damage particles bones things when damaged
+    ParticleSystem damageParticles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +70,9 @@ public class EnemyAI : MonoBehaviour
 
         // Set defualt of 2 seconds
         attackinterval = 2f;
+
+        // Gets the particles
+        damageParticles = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -91,6 +97,10 @@ public class EnemyAI : MonoBehaviour
                 state = 2;
 
                 enemy.isStopped = true;
+            }
+            else if (enemy.remainingDistance > 15f)
+            {
+                state = 0;
             }
         }
         else if (state == 2)
@@ -133,8 +143,8 @@ public class EnemyAI : MonoBehaviour
                 // Resets timer
                 recoveryTimer = 0f;
 
-                // Sets state to idle
-                state = 0;
+                // Sets state to chasing
+                state = 1;
 
                 // Re-enables the AI
                 enemy.enabled = true;
@@ -182,8 +192,16 @@ public class EnemyAI : MonoBehaviour
 
     public void damage(float damage)
     {
+        // Takes away from enemy health
         enemyHealth = enemyHealth - damage;
 
+        // Checks if damage was high enough for a particle
+        if (damage >= 1)
+        {
+            damageParticles.Play();
+        }
+
+        // Kills enemy if at zero
         if (enemyHealth <= 0)
         {
             kill();

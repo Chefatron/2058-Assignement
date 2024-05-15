@@ -505,8 +505,8 @@ MonoBehaviour:
   dungeonData: {fileID: 11400000, guid: 457930700aea6bc46a89d5a804e646e4, type: 2}
   enemies:
   - {fileID: 6411836615291759974, guid: be07f8a3df26a9943a8733aa90b523d6, type: 3}
-  - {fileID: 3499740847001172994, guid: 4de5366717d8ece4a8e0a8aaa0d498a8, type: 3}
-  - {fileID: 7623662843639720262, guid: 0169eb26ce9a626478d519d93bda9856, type: 3}
+  - {fileID: 4017962897591867952, guid: 05762fa3a3352af498c87057c29aa0ed, type: 3}
+  - {fileID: 3465690669630551854, guid: bc40e6b95d338ac4a9f1f4d685c4d390, type: 3}
   player: {fileID: 966569332863088637, guid: e28ed46887cec944ab8df08d594bad1d, type: 3}
   exit: {fileID: 2077234090}
   virtualCamera: {fileID: 1849827134}
@@ -941,7 +941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -1924,10 +1924,6 @@ PrefabInstance:
       propertyPath: m_Lens.FieldOfView
       value: 151.36
       objectReference: {fileID: 0}
-    - target: {fileID: 1894909701937773078, guid: ff3520ff0bbf95d4eab74dbde2cff517, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 2864687109024524457, guid: ff3520ff0bbf95d4eab74dbde2cff517, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.58
@@ -2103,7 +2099,7 @@ MonoBehaviour:
     m_Bits: 8
   m_UseGeometry: 1
   m_DefaultArea: 0
-  m_GenerateLinks: 0
+  m_GenerateLinks: 1
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
   m_OverrideTileSize: 0

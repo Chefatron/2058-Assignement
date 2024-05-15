@@ -69,7 +69,7 @@ public class isAttackable : MonoBehaviour
 
             objectRB.AddForce(knockbackDirection * 10f, ForceMode.Impulse);
 
-            enemy.knock(2f);
+            enemy.knock(1.5f);
 
             enemy.damage(3);
         }  

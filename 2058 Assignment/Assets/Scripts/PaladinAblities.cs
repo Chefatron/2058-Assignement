@@ -34,6 +34,10 @@ public class PaladinAblities : MonoBehaviour
     // Used to space out the healing the player gets from the special
     float specialInterval;
 
+    // Used to tell if the player clicked the attack button while in a cooldown to do thier attack after the the cooldown ends
+    bool isQueued;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -152,7 +156,7 @@ public class PaladinAblities : MonoBehaviour
             if (attackStage == 0) // Swing
             {
                 // Sets the timed attack buffer
-                attackBuffer = 1f;
+                attackBuffer = 1.5f;
 
                 // Now the combo has started the status must be set to isAttacking
                 inCombo = true;
@@ -164,12 +168,12 @@ public class PaladinAblities : MonoBehaviour
                 inCooldown = true;
 
                 // Gives a small countdown since the swing animation is short
-                attackCooldown = 0.25f;
+                attackCooldown = 0.5f;
             }
             else if (attackStage == 1 && inCombo == true) // Jab
             {
                 // Sets the timed attack buffer
-                attackBuffer = 1f;
+                attackBuffer = 1.5f;
 
                 // Increments the attack stage
                 attackStage++;
@@ -198,8 +202,16 @@ public class PaladinAblities : MonoBehaviour
                 attackCooldown = 1f;
             }
 
+            isQueued = false;
+
             // Updates animations based on combo stage
             animations.setAttacking(attackStage);
+        }
+        else if (isQueued == false)
+        {
+            Invoke("OnAttack", attackCooldown + 0.01f);
+
+            isQueued = true;
         }
     }
 

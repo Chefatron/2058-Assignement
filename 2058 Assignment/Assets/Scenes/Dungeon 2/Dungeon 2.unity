@@ -637,12 +637,12 @@ MonoBehaviour:
   dungeonData: {fileID: 11400000, guid: 2ba1301118126864e96c73c3c32d7569, type: 2}
   enemies:
   - {fileID: 6411836615291759974, guid: be07f8a3df26a9943a8733aa90b523d6, type: 3}
-  - {fileID: 3499740847001172994, guid: 4de5366717d8ece4a8e0a8aaa0d498a8, type: 3}
-  - {fileID: 7623662843639720262, guid: 0169eb26ce9a626478d519d93bda9856, type: 3}
+  - {fileID: 4017962897591867952, guid: 05762fa3a3352af498c87057c29aa0ed, type: 3}
+  - {fileID: 3465690669630551854, guid: bc40e6b95d338ac4a9f1f4d685c4d390, type: 3}
   player: {fileID: 966569332863088637, guid: e28ed46887cec944ab8df08d594bad1d, type: 3}
   exit: {fileID: 2077234090}
   virtualCamera: {fileID: 1755229809}
-  mainCam: {fileID: 0}
+  mainCam: {fileID: 970920367}
 --- !u!4 &391023395
 Transform:
   m_ObjectHideFlags: 0
@@ -1237,7 +1237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3827542527365694854, guid: 9158b2d8a02aa4543904949784cb7f91, type: 3}
       propertyPath: orthographic size
-      value: 7.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7431006896137662763, guid: 9158b2d8a02aa4543904949784cb7f91, type: 3}
       propertyPath: m_Name
@@ -1248,6 +1248,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9158b2d8a02aa4543904949784cb7f91, type: 3}
+--- !u!20 &970920367 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3827542527365694854, guid: 9158b2d8a02aa4543904949784cb7f91, type: 3}
+  m_PrefabInstance: {fileID: 970920366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1008890926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,7 +1908,7 @@ MonoBehaviour:
     m_Bits: 8
   m_UseGeometry: 1
   m_DefaultArea: 0
-  m_GenerateLinks: 0
+  m_GenerateLinks: 1
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
   m_OverrideTileSize: 0
