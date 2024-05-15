@@ -86,7 +86,7 @@ public class EnemyAI : MonoBehaviour
             enemy.destination = player.playerPosition;
 
             // Checks if the enemy is within a certain distance of the player
-            if (enemy.remainingDistance < 3f)
+            if (enemy.remainingDistance < 2f)
             {
                 state = 2;
 
@@ -96,7 +96,7 @@ public class EnemyAI : MonoBehaviour
         else if (state == 2)
         {
             // Checks if the player gets a certain distance away from the enemy
-            if (Vector3.Distance(enemy.transform.position, player.playerPosition) > 4f)
+            if (Vector3.Distance(enemy.transform.position, player.playerPosition) > 2f)
             {
                 state = 1;
 
@@ -195,10 +195,5 @@ public class EnemyAI : MonoBehaviour
         enemy.enabled = false;
 
         Destroy(gameObject);
-    }
-
-    public void swap(Vector3 destination)
-    {
-        transform.position = destination;
     }
 }

@@ -31,14 +31,8 @@ public class PaladinAblities : MonoBehaviour
     // Used to tell if the user is currently holding the special button
     bool isSpecial;
 
-    // Used to tell what the player is aiming at when using their special
-    [SerializeField] BoxCollider aimCollider;
-
-    // Used to swap the positions of the special target and the player
-    EnemyAI target;
-
-    // Used to hold the position of the special targe
-    Vector3 targetPos;
+    // Used to space out the healing the player gets from the special
+    float specialInterval;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +46,11 @@ public class PaladinAblities : MonoBehaviour
         // Sets defualt speed multi
         playerAttributes.playerSpeedMultiplier = 1f;
 
+        // Sets defualt special state
         isSpecial = false;
+
+        // Sets defualt special timer
+        specialInterval = 2f;
     }
 
     // Update is called once per frame
@@ -121,6 +119,17 @@ public class PaladinAblities : MonoBehaviour
                 // Resets the cooldown variable so a new attack can start
                 inCooldown = false;
             }
+        }
+
+        if (isSpecial && specialInterval > 0)
+        {
+            specialInterval = specialInterval - Time.deltaTime; 
+        }
+        else if (isSpecial && playerAttributes.playerHP < 10)
+        {
+            playerAttributes.playerHP++;
+
+            specialInterval = 2f;
         }
     }
 
@@ -197,31 +206,15 @@ public class PaladinAblities : MonoBehaviour
     // is called on press and release
     void OnSpecial()
     {
-        if (isSpecial == true)
-        {
-            targetPos = target.transform.position;
-
-            target.swap(transform.position);
-
-            transform.position = targetPos;
-
-            target = null;
-        }
-
         isSpecial = !isSpecial;
 
         playerAttributes.isSpecial = isSpecial;
 
         animations.setSpecial(isSpecial);
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.GetComponent<EnemyAI>())
+        if (isSpecial == false)
         {
-            Debug.Log("enemyFound");
-
-            target = other.GetComponent<EnemyAI>();
+            specialInterval = 2f;
         }
     }
 }

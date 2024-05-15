@@ -24,6 +24,18 @@ public class GameManager : MonoBehaviour
     // Used to space out enemy spawns
     float spawnInterval;
 
+    // The camera that follows the player
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
+
+    // THe camera
+    [SerializeField] Camera mainCam;
+
+    // Used to get the bounding area that the camera can see
+    Plane[] planes = new Plane[6];
+
+    // Used to temporarily hold the current enemy being spawned for some checks
+    GameObject tempEnemy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +43,7 @@ public class GameManager : MonoBehaviour
         spawnInterval = 1f;
 
         // Spawns player in point grabbed from dungeon data and sets the camera to follow it
-        Instantiate(player, dungeonData.playerSpawn, Quaternion.identity);
+        virtualCamera.Follow = Instantiate(player, dungeonData.playerSpawn, Quaternion.identity).transform;
     }
 
     // Update is called once per frame
@@ -61,7 +73,22 @@ public class GameManager : MonoBehaviour
     void spawnEnemy()
     {
         // Spawns an enemy at a random one of the spawn points
-        Instantiate(enemies[Random.Range(0, enemies.Count)], dungeonData.spawnPoints[Random.Range(0, dungeonData.spawnPoints.Count)], Quaternion.identity);
+        tempEnemy = Instantiate(enemies[Random.Range(0, enemies.Count)], dungeonData.spawnPoints[Random.Range(0, dungeonData.spawnPoints.Count)], Quaternion.identity);
+
+        planes = GeometryUtility.CalculateFrustumPlanes(mainCam);
+
+        // Checks if the enemy is visible when being spawned
+        if (GeometryUtility.TestPlanesAABB(planes, tempEnemy.GetComponent<CapsuleCollider>().bounds))
+        {
+            // Destroys the enemy
+            Destroy(tempEnemy);
+
+            // Nulls out the variable
+            tempEnemy = null;
+
+            // Spawns another
+            spawnEnemy();
+        }
     }
 
     // Is called when loading an new level 
