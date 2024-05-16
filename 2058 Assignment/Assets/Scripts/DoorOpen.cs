@@ -19,7 +19,7 @@ public class DoorOpen : MonoBehaviour
         breakParticles = GetComponent<ParticleSystem>();
 
         // Get the animation
-        openAnimation = GetComponent<Animation>();
+        openAnimation = GetComponentInParent<Animation>();
     }
 
     private void OnTriggerEnter(Collider other)

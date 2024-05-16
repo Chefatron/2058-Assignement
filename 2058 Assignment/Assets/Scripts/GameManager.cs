@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         // Removes any key from the player
         playerAttributes.hasKey = false;
 
-        LoadScene(Random.Range(2, 4));
+        LoadScene(Random.Range(2, 6));
     }
 
     // Loads the loading scene and starts loading the desired scene

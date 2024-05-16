@@ -2834,6 +2834,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6839871205711256112, guid: 62bb67187f139984f888cfdd07b1b61b, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8491403842562318540, guid: 62bb67187f139984f888cfdd07b1b61b, type: 3}
       propertyPath: m_Name
       value: GameUI

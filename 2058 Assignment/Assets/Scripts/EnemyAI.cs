@@ -98,7 +98,7 @@ public class EnemyAI : MonoBehaviour
 
                 enemy.isStopped = true;
             }
-            else if (enemy.remainingDistance > 15f)
+            else if (enemy.remainingDistance > 10f)
             {
                 state = 0;
             }

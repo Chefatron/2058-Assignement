@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac10fe8e88f38e940b3927d1c96cccdf, type: 3}
+  m_Name: Dungeon4Data
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {x: 5, y: 7, z: 0}
+  - {x: 21.25, y: 12.25, z: 0}
+  - {x: 18, y: 2.5, z: 0}
+  - {x: -4.75, y: 12.25, z: 0}
+  - {x: 0, y: 17.25, z: 0}
+  - {x: -6.75, y: 22.5, z: 0}
+  - {x: -22, y: 2.5, z: 0}
+  playerSpawn: {x: -21.58, y: 22.1, z: 0}

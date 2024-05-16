@@ -8,7 +8,7 @@ public class MainMenuManager : MonoBehaviour
     // Is called when loading a level for the player
     public void startGame()
     {
-        LoadScene(Random.Range(2, 4));
+        LoadScene(Random.Range(2, 6));
     }
 
     // Closes the game
