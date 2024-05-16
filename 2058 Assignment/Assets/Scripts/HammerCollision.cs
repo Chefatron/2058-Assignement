@@ -9,6 +9,9 @@ public class HammerCollision : MonoBehaviour
     // The script that takes in the user for input and does the animation control for attacking
     PaladinAblities paladinAttacks;
 
+    // The player attributes for a camera shake when attacking
+    [SerializeField] PlayerAttributes playerAttributes;
+
     // The collider surrounding the hammer
     BoxCollider hammerCollider;
 
@@ -63,6 +66,8 @@ public class HammerCollision : MonoBehaviour
                     {
                         objectsInRange[i].largeHit(transform.forward);
 
+                        playerAttributes.shakeTimer = 0.3f;
+
                         objectsInRange[i].wasHit = true;
                     }
                 }
@@ -74,6 +79,8 @@ public class HammerCollision : MonoBehaviour
                     if (objectsInRange[i].wasHit == false)
                     {
                         objectsInRange[i].mediumHit(transform.up);
+
+                        playerAttributes.shakeTimer = 0.2f;
 
                         objectsInRange[i].wasHit = true;
                     }
@@ -94,6 +101,8 @@ public class HammerCollision : MonoBehaviour
                     {
                         objectsInRange[i].largeHit(paladinAttacks.transform.up);
 
+                        playerAttributes.shakeTimer = 0.3f;
+
                         objectsInRange[i].wasHit = true;
                     }
                 }
@@ -112,6 +121,8 @@ public class HammerCollision : MonoBehaviour
         else if (other.gameObject.CompareTag("Architecture") && paladinAttacks.attackStage == 1 && other.transform.position.y < transform.position.y) // Checks if the hammer hits the ground to do the dust effect
         {
             hitParticles.Play();
+
+            playerAttributes.shakeTimer = 0.3f;
         }
     }
 

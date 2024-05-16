@@ -8,7 +8,7 @@ public class GameOverManager : MonoBehaviour
     // Restarts the game for the player
     public void replayGame()
     {
-        LoadScene(Random.Range(2, 4));
+        LoadScene(Random.Range(2, 6));
     }
 
     // Loads the loading scene and starts loading the desired scene

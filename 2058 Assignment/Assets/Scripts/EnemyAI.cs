@@ -120,6 +120,8 @@ public class EnemyAI : MonoBehaviour
             {
                 player.playerHP -= enemyDamage;
 
+                player.shakeTimer = 0.2f;
+
                 animations.setAttacking(true);
 
                 attackinterval = 2f;

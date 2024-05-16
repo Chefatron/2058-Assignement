@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     // THe camera
     [SerializeField] Camera mainCam;
 
+    // Used to adjust the shake of the camera
+    CinemachineBasicMultiChannelPerlin noise;
+
     // Used to get the bounding area that the camera can see
     Plane[] planes = new Plane[6];
 
@@ -44,6 +47,9 @@ public class GameManager : MonoBehaviour
 
         // Spawns player in point grabbed from dungeon data and sets the camera to follow it
         virtualCamera.Follow = Instantiate(player, dungeonData.playerSpawn, Quaternion.identity).transform;
+
+        // Get the noise component from the cinemachine camera
+        noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
 
         // Reset both key varaaibles
         playerAttributes.needKey = false;
@@ -71,6 +77,22 @@ public class GameManager : MonoBehaviour
             spawnEnemy();
 
             spawnInterval = Random.Range(1f, 5f);
+        }
+
+        // Checks if the shaketimer is higher than 0 and lowers it while shaking the camera if so
+        if (playerAttributes.shakeTimer > 0)
+        {
+            noise.m_AmplitudeGain = 1f;
+            noise.m_FrequencyGain = 1f;
+
+            playerAttributes.shakeTimer = playerAttributes.shakeTimer - Time.deltaTime;
+        }
+        else
+        {
+            noise.m_AmplitudeGain = 0f;
+            noise.m_FrequencyGain = 0f;
+
+            playerAttributes.shakeTimer = 0f;
         }
     }
 

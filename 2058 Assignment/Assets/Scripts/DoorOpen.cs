@@ -32,6 +32,9 @@ public class DoorOpen : MonoBehaviour
             // Plays the animation
             openAnimation.Play();
 
+            // Shakes the camera for the door opening process
+            playerAttributes.shakeTimer = 3f;
+
             // Destorys the door after 3 seconds
             Invoke("openDoor", 3f);
         }
