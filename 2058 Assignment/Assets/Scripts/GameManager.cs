@@ -44,6 +44,10 @@ public class GameManager : MonoBehaviour
 
         // Spawns player in point grabbed from dungeon data and sets the camera to follow it
         virtualCamera.Follow = Instantiate(player, dungeonData.playerSpawn, Quaternion.identity).transform;
+
+        // Reset both key varaaibles
+        playerAttributes.needKey = false;
+        playerAttributes.hasKey = false;
     }
 
     // Update is called once per frame
@@ -66,7 +70,7 @@ public class GameManager : MonoBehaviour
         {
             spawnEnemy();
 
-            spawnInterval = Random.Range(1f, 10f);
+            spawnInterval = Random.Range(1f, 5f);
         }
     }
 
@@ -94,6 +98,9 @@ public class GameManager : MonoBehaviour
     // Is called when loading an new level 
     public void nextScene()
     {
+        // Removes any key from the player
+        playerAttributes.hasKey = false;
+
         LoadScene(Random.Range(2, 4));
     }
 
@@ -123,6 +130,8 @@ public class GameManager : MonoBehaviour
     // Quits to main menu
     public void quitToMenu()
     {
+        playerAttributes.resetValues();
+
         LoadScene(0);
     }
 }

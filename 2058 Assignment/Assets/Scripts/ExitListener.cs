@@ -8,7 +8,7 @@ public class ExitListener : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
             gameManager.nextScene();
         }

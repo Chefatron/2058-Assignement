@@ -37,6 +37,8 @@ public class PaladinAblities : MonoBehaviour
     // Used to tell if the player clicked the attack button while in a cooldown to do thier attack after the the cooldown ends
     bool isQueued;
 
+    // Particles for the special ability
+    ParticleSystem healParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,9 @@ public class PaladinAblities : MonoBehaviour
 
         // Sets defualt special timer
         specialInterval = 2f;
+
+        // Get particle system
+        healParticles = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -218,15 +223,25 @@ public class PaladinAblities : MonoBehaviour
     // is called on press and release
     void OnSpecial()
     {
+        // Sets is special to opposite of current state
         isSpecial = !isSpecial;
 
+        // Updates attributes for reading globally
         playerAttributes.isSpecial = isSpecial;
 
+        // Updated animations
         animations.setSpecial(isSpecial);
 
+        // Checks the state set and updates both the particles and timer
         if (isSpecial == false)
         {
             specialInterval = 2f;
+
+            healParticles.Stop();
+        }
+        else 
+        { 
+            healParticles.Play();
         }
     }
 }

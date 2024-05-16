@@ -65,6 +65,9 @@ public class PlayerMovement : MonoBehaviour
     // The script that controls player animations
     PlayerAnimations animations;
 
+    // A little sprite that is enabled when the player goes near a door they don't have the key for
+    [SerializeField] GameObject keySprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,6 +94,8 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is called dynamically for physics based operations
     void FixedUpdate()
     {
+        keySprite.SetActive(playerAttributes.needKey);
+
         if (!isCrouched && !playerAttributes.isSpecial)
         {
             // Applies force to players rigidbody based on the input

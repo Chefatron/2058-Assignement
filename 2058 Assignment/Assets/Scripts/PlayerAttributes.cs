@@ -14,6 +14,10 @@ public class PlayerAttributes : ScriptableObject
 
     public bool isSpecial;
 
+    public bool hasKey;
+
+    public bool needKey;
+
     public void resetValues()
     {
         playerHP = 10;
@@ -21,5 +25,11 @@ public class PlayerAttributes : ScriptableObject
         playerSpeedMultiplier = 1;
 
         playerPosition = Vector3.zero;
+
+        isSpecial = false;
+
+        hasKey = false;
+
+        needKey = false;
     }
 }
