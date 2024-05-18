@@ -186,6 +186,8 @@ public class GameManager : MonoBehaviour
     {
         playerAttributes.resetValues();
 
+        Time.timeScale = 1f;
+
         LoadScene(0);
     }
 }
