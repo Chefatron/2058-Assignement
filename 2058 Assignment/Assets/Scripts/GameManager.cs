@@ -54,6 +54,9 @@ public class GameManager : MonoBehaviour
         // Reset both key varaaibles
         playerAttributes.needKey = false;
         playerAttributes.hasKey = false;
+
+        // Set the res of the screen for the low quality look
+        Screen.SetResolution(480, 270, true);
     }
 
     // Update is called once per frame

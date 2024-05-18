@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
+    private void Start()
+    {
+        // Set the res of the screen for the low quality look
+        Screen.SetResolution(480, 270, true);
+    }
+
     // Restarts the game for the player
     public void replayGame()
     {

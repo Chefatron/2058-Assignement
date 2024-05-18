@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    private void Start()
+    {
+        // Set the res of the screen for the low quality look
+        Screen.SetResolution(480, 270, true);
+    }
+
     // Is called when loading a level for the player
     public void startGame()
     {

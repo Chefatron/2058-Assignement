@@ -16,3 +16,6 @@ MonoBehaviour:
   playerSpeedMultiplier: 1
   playerPosition: {x: -21.58, y: 22, z: 0}
   isSpecial: 0
+  hasKey: 0
+  needKey: 0
+  shakeTimer: 0
