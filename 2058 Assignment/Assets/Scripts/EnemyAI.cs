@@ -9,6 +9,9 @@ public class EnemyAI : MonoBehaviour
     // Used for getting a variety of into from the player that the enemy needs to know how to act
     [SerializeField] PlayerAttributes player;
 
+    // Used for playing the bones sound
+    [SerializeField] AudioManager audioManager;
+
     // The nav mesh component for moving the enemy
     NavMeshAgent enemy;
 
@@ -199,6 +202,8 @@ public class EnemyAI : MonoBehaviour
         // Checks if damage was high enough for a particle
         if (damage >= 1)
         {
+            audioManager.playSound("Bones_Hit");
+
             damageParticles.Play();
         }
 

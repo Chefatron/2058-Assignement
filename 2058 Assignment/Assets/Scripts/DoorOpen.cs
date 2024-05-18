@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour
 {
+    // Used to remove the key from the players attrivutes
     [SerializeField] PlayerAttributes playerAttributes;
+
+    // Used for playing the door opening noise
+    [SerializeField] AudioManager audioManager;
 
     // The particles that play when the door is opened
     ParticleSystem breakParticles;
@@ -26,6 +30,9 @@ public class DoorOpen : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && playerAttributes.hasKey == true && !other.isTrigger)
         {
+            // Plays the audio
+            audioManager.playSound("Door_Open");
+
             // Plays the particles
             breakParticles.Play();
 
@@ -56,6 +63,8 @@ public class DoorOpen : MonoBehaviour
     {
         // Removes the key
         playerAttributes.hasKey = false;
+
+        audioManager.stopSound("Door_Open");
 
         Destroy(gameObject);
     }

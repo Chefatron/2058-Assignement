@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAttributes: {fileID: 11400000, guid: 3ec4649e225333044b2b8c4468709501, type: 2}
+  audioManager: {fileID: 11400000, guid: a7780436edaff6549b4f37314dc59b21, type: 2}
 --- !u!198 &1550813426442979865
 ParticleSystem:
   m_ObjectHideFlags: 0

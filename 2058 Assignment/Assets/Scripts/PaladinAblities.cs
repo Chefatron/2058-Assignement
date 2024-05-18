@@ -10,6 +10,9 @@ public class PaladinAblities : MonoBehaviour
     // Get the player attriutes scriptable object to edit the speed multiplier while attacking
     [SerializeField] PlayerAttributes playerAttributes;
 
+    // For playing the healing sounds
+    [SerializeField] AudioManager audioManager;
+
     // Used to tell which stage of the attack combo the player is in
     public int attackStage;
 
@@ -136,6 +139,8 @@ public class PaladinAblities : MonoBehaviour
         }
         else if (isSpecial && playerAttributes.playerHP < 10)
         {
+            audioManager.playSound("Heal_Dong");
+
             playerAttributes.playerHP++;
 
             specialInterval = 2f;
@@ -155,7 +160,7 @@ public class PaladinAblities : MonoBehaviour
             }
 
             // Sets the player speed to slower
-            playerAttributes.playerSpeedMultiplier = 0.1f;
+            playerAttributes.playerSpeedMultiplier = 0.05f;
 
             // If statement checks the attack stage and does the corresponding attack funcitons
             if (attackStage == 0) // Swing
@@ -237,11 +242,15 @@ public class PaladinAblities : MonoBehaviour
         {
             specialInterval = 2f;
 
-            healParticles.Stop();
+            healParticles.Stop(false);
+
+            audioManager.stopSound("Heal_Chimes");
         }
         else 
         { 
-            healParticles.Play();
+            healParticles.Play(false);
+
+            audioManager.playSound("Heal_Chimes");
         }
     }
 }

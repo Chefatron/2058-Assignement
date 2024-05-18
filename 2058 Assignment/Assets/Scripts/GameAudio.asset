@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e477330a913f845848882d3911ea29, type: 3}
+  m_Name: GameAudio
+  m_EditorClassIdentifier: 
+  soundList:
+  - name: Music
+    clip: {fileID: 8300000, guid: d705cf8d99332154aad177035bbfa29d, type: 3}
+    volume: 0.5
+    loop: 1
+    source: {fileID: 0}
+  - name: Footsteps
+    clip: {fileID: 8300000, guid: c21a4995d0e070945829e839ed310337, type: 3}
+    volume: 0.45
+    loop: 1
+    source: {fileID: 0}
+  - name: Hammer_Hit
+    clip: {fileID: 8300000, guid: 0837c970d2ace9f42b6d7b6d45826254, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bones_Hit
+    clip: {fileID: 8300000, guid: 333233dbfe93e52409174e8efa3531e9, type: 3}
+    volume: 0.6
+    loop: 0
+    source: {fileID: 0}
+  - name: Heal_Chimes
+    clip: {fileID: 8300000, guid: cc4dc04b3b73d0f4595dba2f875ca041, type: 3}
+    volume: 0.55
+    loop: 1
+    source: {fileID: 0}
+  - name: Heal_Dong
+    clip: {fileID: 8300000, guid: b36e5b0eec9a3ba4496bd78892183349, type: 3}
+    volume: 0.45
+    loop: 0
+    source: {fileID: 0}
+  - name: Get_Key
+    clip: {fileID: 8300000, guid: e2ca831453b3ac0409a10e72d1c4d863, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Door_Open
+    clip: {fileID: 8300000, guid: 4c42235ac468b0c4694a052f169bac91, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}

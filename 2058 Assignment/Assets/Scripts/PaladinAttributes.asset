@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHP: 10
   playerSpeedMultiplier: 1
-  playerPosition: {x: -21.58, y: 22, z: 0}
+  playerPosition: {x: -15.120162, y: 22, z: 0}
   isSpecial: 0
   hasKey: 0
   needKey: 0

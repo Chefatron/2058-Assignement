@@ -63,7 +63,7 @@ public class PlayerAim : MonoBehaviour
 
     void OnAim(InputValue mouseInput)
     {
-        if (playerAttributes.playerSpeedMultiplier != 0.1f)
+        if (playerAttributes.playerSpeedMultiplier != 0.05f)
         {
             // Gets the vector 2 from the mouse pos
             mousePosition = mouseInput.Get<Vector2>();

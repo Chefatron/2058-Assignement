@@ -39,6 +39,12 @@ public class GameManager : MonoBehaviour
     // Used to temporarily hold the current enemy being spawned for some checks
     GameObject tempEnemy;
 
+    // Used to check the level thats gonna be loaded so it doesn't load the same one twice
+    int sceneToLoad;
+
+    // The audio manager scriptable object with all the data for playing the music
+    [SerializeField] AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +63,14 @@ public class GameManager : MonoBehaviour
 
         // Set the res of the screen for the low quality look
         Screen.SetResolution(480, 270, true);
+
+        // Instantiates the audio instance obejct
+        audioManager.CreateManager();
+
+        // Plays the music
+        audioManager.playSound("Music");
+
+        
     }
 
     // Update is called once per frame
@@ -126,7 +140,22 @@ public class GameManager : MonoBehaviour
         // Removes any key from the player
         playerAttributes.hasKey = false;
 
-        LoadScene(Random.Range(2, 6));
+        sceneToLoad = Random.Range(2, 6);
+        
+        // Checks if scene to load matched the current scene and either adjusts it by 1 up or down depending or just loads the scene if not
+        if (sceneToLoad == SceneManager.GetActiveScene().buildIndex && sceneToLoad != 2)
+        {
+            LoadScene(sceneToLoad - 1);
+        }
+        else if (sceneToLoad == SceneManager.GetActiveScene().buildIndex)
+        {
+            LoadScene(sceneToLoad + 1);
+        }
+        else
+        {
+            LoadScene(sceneToLoad);
+        }
+        
     }
 
     // Loads the loading scene and starts loading the desired scene

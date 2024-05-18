@@ -12,6 +12,9 @@ public class HammerCollision : MonoBehaviour
     // The player attributes for a camera shake when attacking
     [SerializeField] PlayerAttributes playerAttributes;
 
+    // To play the hammer hit sound
+    [SerializeField] AudioManager audioManager;
+
     // The collider surrounding the hammer
     BoxCollider hammerCollider;
 
@@ -121,6 +124,8 @@ public class HammerCollision : MonoBehaviour
         else if (other.gameObject.CompareTag("Architecture") && paladinAttacks.attackStage == 1 && other.transform.position.y < transform.position.y) // Checks if the hammer hits the ground to do the dust effect
         {
             hitParticles.Play();
+
+            audioManager.playSound("Hammer_Hit");
 
             playerAttributes.shakeTimer = 0.3f;
         }

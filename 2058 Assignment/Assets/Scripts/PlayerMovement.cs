@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     // Used to get the speed multiplier attribute from the player attributes scriptable object
     [SerializeField] PlayerAttributes playerAttributes;
 
+    // Used for playing footsteps
+    [SerializeField] AudioManager audioManager;
+
     // Used to get the vector 2 from the input data
     float keyData;
 
@@ -102,13 +105,15 @@ public class PlayerMovement : MonoBehaviour
             playerRB.AddForce(movementData * speed * playerAttributes.playerSpeedMultiplier);
 
             // Sets the running animation on or off based on movement
-            if (movementData.x != 0)
+            if (movementData.x != 0 && playerGrounded)
             {
                 animations.setRun(true);
             }
             else
             {
                 animations.setRun(false);
+
+                audioManager.stopSound("Footsteps");
             }
         }
 
@@ -177,6 +182,11 @@ public class PlayerMovement : MonoBehaviour
     {
         // Gets the vector 2 from the stick input
         keyData = keyInput.Get<float>();
+
+        if (movementData == Vector3.zero)
+        {
+            audioManager.playSound("Footsteps");
+        }
 
         // Puts the vector 2 into a vector 3 for applying force
         movementData = new Vector3(keyData, 0f, 0f);
